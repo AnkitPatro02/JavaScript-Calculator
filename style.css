@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    transition: all 0.5s ease;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='800' preserveAspectRatio='none' viewBox='0 0 1440 800'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1091%26quot%3b)' fill='none'%3e%3crect width='1440' height='800' x='0' y='0' fill='url(%23SvgjsLinearGradient1092)'%3e%3c/rect%3e%3cpath d='M45 800L845 0L1280 0L480 800z' fill='url(%23SvgjsLinearGradient1093)'%3e%3c/path%3e%3cpath d='M558.2 800L1358.2 0L1481.2 0L681.2 800z' fill='url(%23SvgjsLinearGradient1093)'%3e%3c/path%3e%3cpath d='M1363 800L563 0L5 0L805 800z' fill='url(%23SvgjsLinearGradient1094)'%3e%3c/path%3e%3cpath d='M906.8 800L106.79999999999995 0L-473.70000000000005 0L326.29999999999995 800z' fill='url(%23SvgjsLinearGradient1094)'%3e%3c/path%3e%3cpath d='M659.9761086759866 800L1440 19.976108675986552L1440 800z' fill='url(%23SvgjsLinearGradient1093)'%3e%3c/path%3e%3cpath d='M0 800L780.0238913240134 800L 0 19.976108675986552z' fill='url(%23SvgjsLinearGradient1094)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1091'%3e%3crect width='1440' height='800' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='50%25' y1='100%25' x2='50%25' y2='0%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1092'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='%2300459e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' id='SvgjsLinearGradient1093'%3e%3cstop stop-color='rgba(15%2c 70%2c 185%2c 0.2)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(15%2c 70%2c 185%2c 0.2)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='100%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1094'%3e%3cstop stop-color='rgba(15%2c 70%2c 185%2c 0.2)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(15%2c 70%2c 185%2c 0.2)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+.calc {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #000;
+}
+
+
+#display {
+    height: 97px;
+    width: 282px;
+    font-size: 30px;
+}
+
+#display input {
+    margin-bottom: .5em;
+    width: 132%;
+    height: 70px;
+    font-size: 35px;
+    outline: none;
+    border: none;
+    text-align: right;
+    background: #ecf0f3;
+    border-radius: 6px;
+    padding-right: 3%;
+}
+
+#display::-webkit-scrollbar {
+    display: block;
+    height: 3px;
+
+}
+
+button {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: 0;
+    margin: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 200ms ease;
+    font-size: large;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button#equal {
+    height: 115px;
+}
+
+/* =============Colors========== */
+
+.calc {
+    background-color: #93C6E7;
+}
+
+.calc#display {
+    color: black;
+}
+
+.calc button#clear {
+    background-color: #FF5F9E;
+    color: #820000;
+}
+
+.calc button#bs {
+    background-color: #FF5F9E;
+    color: #820000;
+}
+.calc button#sin {
+    background-color: #FF6B6B;
+    color: #630606;
+}
+.calc button#cos {
+    background-color: #FF6B6B;
+    color: #630606;
+}
+.calc button#tan {
+    background-color: #FF6B6B;
+    color: #630606;
+}
+.calc button#divide {
+    background-color: #FF6B6B;
+    color: #630606;
+}
+.calc button#cross {
+    background-color: #FF6B6B;
+    color: #630606;
+}
+.calc button#cube {
+    background-color: #FF6B6B;
+    color: #630606;
+}
+.calc button#square {
+    background-color: #FF6B6B;
+    color: #630606;
+}
+.calc button#sqrt {
+    background-color: #FF6B6B;
+    color: #630606;
+}
+
+.calc button#log2 {
+    background-color: #FF6B6B;
+    color: #630606;
+}
+
+.calc button#fact {
+    background-color: #FF6B6B;
+    color: #630606;
+}
+.calc button#fullstop {
+    background-color: #FF6B6B;
+    color: #630606;
+}
+.calc button#exp {
+    background-color: #FF6B6B;
+    color: #630606;
+}
+.calc button#plus {
+    background-color: #FF6B6B;
+    color: #630606;
+}
+.calc button#minus {
+    background-color: #FF6B6B;
+    color: #630606;
+}
+.calc button#bracket {
+    background-color: #FF6B6B;
+    color: #630606;
+}
+
+.calc button.btn{
+    background-color: #5BC0F8;
+    color: #0A2647;
+}
+
+.calc button.btn{
+    background-color: #97DECE;
+    color: #285430;
+}
+
+.calc button#equal {
+    background-color: #041562;
+    color: white;
+}
